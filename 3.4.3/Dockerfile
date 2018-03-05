@@ -8,4 +8,5 @@ RUN apt-get update && \
 RUN apt-get install -y xzdec
 RUN tlmgr init-usertree && \
   tlmgr install booktabs makecell threeparttable geometry \
-    multirow framed pgf ms xcolor float
+    multirow framed pgf ms xcolor float placeins
+RUN apt-get install -y graphviz
